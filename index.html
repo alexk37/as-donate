@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .donate-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .donate-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .donate-button {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+
+<div class="donate-container">
+<!--     <img src="https://your-image-url.com/image.jpg" alt="Donate Image">
+    <h1>Donate AS</h1>
+    <p>Your donation helps us continue our work. Please consider making a donation today.</p> -->
 
     <!-- Stripe Buy Button -->
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <stripe-buy-button
+      class="donate-button"
       buy-button-id="buy_btn_1PnAMNGrkcxXocdWswH8KALD"
       publishable-key="pk_live_51OQB2dGrkcxXocdWkDLfxMDKIwT6KNKVg3SVTDGQNszR7hDjARe9mLmxkUqRbl0eJS1fE9ePC5j5GQJ6Q4Joak8W00O8JnDTAS">
     </stripe-buy-button>
+</div>
 
 </body>
 </html>
